@@ -7,14 +7,13 @@ f = lambda x: x**2 - 9
 x = var(1)
 
 
-
 max_iter = 1000
-for iter in range(max_iter):
+for it in range(max_iter):
     y = f(x.a)
     dy = df(f,x)
     x = var(x - y/dy)
     if abs(y) <= err:
-        print("stop at iter {}: x = {} f(x) = {}".format(iter,x))
+        print(f'stop at iter {it}: x = {x} f(x) = {y}')
         break
     if iter == max_iter:
         print("max_iter is complete: x = {}".format(x))

@@ -1,4 +1,5 @@
-from revediff import var,const,df
+import exemplos
+from diff.revediff import var,const,df
 f = lambda x: x**2 -3*x + 1
 
 ## gradiente descent para encontrar df(x) = 0
